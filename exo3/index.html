@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EXO3</title>
+</head>
+<body>
+    <div id="container">
+    </div>
+
+    <script>
+        const container = document.getElementById("container"); // recupérer le conteneur 
+
+        for (let i = 1; i<5; i++){ // créer les cubes de couleur aléatoire
+            const newBox = document.createElement("div"); // création du nouveau DIV
+            newBox.classList.add("box"); // formatage des cube
+            newBox.addEventListener('click', function(){                                                                                                //ajout event listener on each new box
+                resultat.style.backgroundColor = newBox.style.backgroundColor;                                                                              // pass the background to result box
+                resultat.innerText = newBox.style.backgroundColor;                                                                                          // print color value to the result div
+            })
+            container.appendChild(newBox);                                                                                                                  // append the new box inside container div
+        }
+    </script>
+</body>
+</html>

@@ -1,11 +1,7 @@
 #container{
-    display: grid;
+    display: flex;
+    align-items: center;
     margin: auto;
-    /*width: calc(fit-content + 3em);*/
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 1em;
-    column-gap: 1em;
-
 }
 
 #last{
