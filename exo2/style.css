@@ -1,0 +1,26 @@
+#container{
+    display: grid;
+    margin: auto;
+    /*width: calc(fit-content + 3em);*/
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1em;
+    column-gap: 1em;
+
+}
+
+#last{
+    margin-top: 1em;
+    margin: auto;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#last{
+    margin-top: 1em;
+    margin: auto;
+    background-color: blue;
+}

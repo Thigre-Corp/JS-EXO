@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="carre" class="carre" >text</div>
+    <script>
+        const carre = document.querySelector('.carre')
+        console.dir(carre);
+        carre.addEventListener('click', function(){
+            const styleCarre = getComputedStyle(carre);
+            alert(
+                "La classe est "+carre.classList+
+                "\nLa texte affiché est "+carre.textContent+
+                "\nLa couleur du texte est "+styleCarre.color+
+                "\nLa couleur du fond est "+styleCarre.backgroundColor+
+                "\nLa police est "+styleCarre.fontFamily+" et sa hauteur est "+styleCarre.fontSize+
+                "\nLa largeur est "+styleCarre.width+
+                "\nLa Hauteur est "+styleCarre.height
+            );
+        
+        });
+        console.dir(getComputedStyle(carre));
+    </script>
+</body>
+</html>

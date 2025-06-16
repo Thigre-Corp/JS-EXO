@@ -1,0 +1,9 @@
+.carre{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    color: blue;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
