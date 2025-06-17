@@ -1,0 +1,61 @@
+#container{
+    display: block;
+    width: 500px;
+    border: 1px solid black;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.greyBG{
+    background-color: grey;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+    justify-content: center;
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 80px ;
+    width : 80px ;
+    border: 1px solid black;
+    transition: .5s ;
+    font-size: .5em;
+
+}
+
+.hidden{
+    display: none;
+}
+
+svg{
+    margin: auto;
+    height: 40%;
+    aspect-ratio: 1/1;
+}
+
+.facebook{
+    background-color: rgb(46, 26, 156);
+}
+
+.twitter{
+    background-color: rgb(51, 108, 182);
+}
+
+.instagram{
+    background-color: rgb(163, 41, 61) ;
+}
+
+.selected{
+    border-radius: 25%;
+    box-shadow: 4px 4px 2px black;
+}
