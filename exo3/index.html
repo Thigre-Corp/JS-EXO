@@ -15,12 +15,16 @@
 
         for (let i = 1; i<5; i++){ // créer les cubes de couleur aléatoire
             const newBox = document.createElement("div"); // création du nouveau DIV
-            newBox.classList.add("box"); // formatage des cube
-            newBox.addEventListener('click', function(){                                                                                                //ajout event listener on each new box
-                resultat.style.backgroundColor = newBox.style.backgroundColor;                                                                              // pass the background to result box
-                resultat.innerText = newBox.style.backgroundColor;                                                                                          // print color value to the result div
+            newBox.classList.add("box","toGreen"); // formatage des cube
+            newBox.addEventListener('click', function(){       //ajout event listener on each new box
+                if (newBox.classList.contains("toGreen")){
+                    newBox.classList.replace("toGreen", "toRed");  
+                }
+                else{
+                    newBox.classList.replace("toRed", "toGreen");  
+                }
             })
-            container.appendChild(newBox);                                                                                                                  // append the new box inside container div
+            container.appendChild(newBox);                     // append the new box inside container div
         }
     </script>
 </body>

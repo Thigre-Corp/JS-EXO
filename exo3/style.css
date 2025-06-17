@@ -1,25 +1,23 @@
 #container{
+    width: calc(400px + 1em);
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
+    gap: 1em;
 }
 
 .box{
     width: 200px;
     height: 200px;
     border: 1px solid black;
-    background-color: lightgreen;
-    animation: 2s animate alternate;
+    transition: 1s ;
 }
 
-@keyframes{
-    from{
-        background-color: lightgreen;
-        transform: scale(1) rotate(0deg);
+.toGreen{
+    background-color: lightgreen;
+    transform: rotate(0) scale(1);
+}
 
-    }
-    to{
-        background-color: red;
-        transform: scale(0.9) rotate(360deg)
-    }
-} 
+.toRed{
+    background-color: red;
+    transform: rotate(360deg) scale(0.9); 
+}
