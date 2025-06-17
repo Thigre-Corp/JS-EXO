@@ -16,7 +16,9 @@
     background-color: antiquewhite;
     border: 1px solid black;
     border-radius: 20px;
-
+    span{
+        display: block;
+    }
     p{
         font-size: .5em;
         text-align: right;
@@ -24,5 +26,7 @@
 }
 
 .favorite{
-    background-color: red;
+    span{
+        color: red;
+    }
 }
