@@ -1,5 +1,4 @@
 const container = document.getElementById("container"); // récupere le conteneur
-
 Object.entries(quotes).forEach(([key, value]) =>{  // pour chaque élément de quotes (voir quote.js)
     const newQuote = document.createElement("div"); // créer un nouvelle DIV
     newQuote.innerHTML=("<q>"+value+"</q><span class='heart'>&#x2764;</span><p>"+key+"</p>"); // y ajouter du contenu
